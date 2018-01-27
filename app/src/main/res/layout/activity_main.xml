@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context="com.techno.minilauncher.screens.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="My Custom Launcher"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdvWallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:transitionName="@string/wallpaper_transition"
+                    app:placeholderImageScaleType="fitXY"
+                    fresco:placeholderImage="@drawable/ic_default_wallpaper" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/btnDialer"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.20"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_dialer"
+                        android:text="Show Apps"
+                        android:textAllCaps="false" />
+
+                    <ImageButton
+                        android:id="@+id/btnContact"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.20"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_contact"
+                        android:text="Show Apps"
+                        android:textAllCaps="false" />
+
+
+                    <ImageButton
+                        android:id="@+id/btnApps"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.20"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_app"
+                        android:text="Show Apps"
+                        android:textAllCaps="false" />
+
+                    <ImageButton
+                        android:id="@+id/btnMessage"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.21"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_message"
+                        android:text="Show Apps"
+                        android:textAllCaps="false" />
+
+
+                    <ImageButton
+                        android:id="@+id/btnCamera"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.20"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_camera"
+                        android:text="Show Apps"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llHomeBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorHomeBottom"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp"
+                    android:visibility="gone">
+
+
+                    <Button
+                        android:id="@+id/btnWallpaper"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.33"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@drawable/ic_wallpaper"
+                        android:scaleType="fitCenter"
+                        android:text="@string/change_wallpaper"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorAccent" />
+
+                    <Button
+                        android:id="@+id/btnAppChange"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.33"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@drawable/ic_change_launcher"
+                        android:scaleType="fitCenter"
+                        android:text="@string/change_setting"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorAccent" />
+
+                    <Button
+                        android:id="@+id/btnSettings"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.33"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@drawable/ic_settings"
+                        android:scaleType="fitCenter"
+                        android:text="@string/mobile_setting"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

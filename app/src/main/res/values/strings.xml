@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mini Launcher</string>
+    <string name="mobile_setting">Settings</string>
+    <string name="change_setting">Change Launcher</string>
+    <string name="change_wallpaper">Wallpaper</string>
+    <string name="wallpaper_transition">Wallpaper Transition</string>
+</resources>
